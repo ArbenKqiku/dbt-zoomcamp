@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: homework_staging
+    database: terraform-412318 # BigQuery project id
+    schema: data_ingestion # BigQuery data set
+
+    tables:
+      - name: yellow_tripdata
+      - name: green_tripdata
+      - name: fhv_trip_data
